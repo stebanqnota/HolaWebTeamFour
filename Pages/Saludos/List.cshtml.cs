@@ -9,8 +9,13 @@ namespace HolaWeb.App.Frontend.Pages
 {
     public class ListModel : PageModel
     {
-        public void OnGet()
+        private string [] saludos = {"Buenos días", "Buenas tardes","Buenas noches","Hasta mañana"};
+
+        public list<string> ListaSaludos {get; set;} 
+                public void OnGet()
         {
+            ListaSaludos = new List<string>();
+            ListaSaludos.AddRange(); 
         }
     }
 }
